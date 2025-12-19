@@ -21,7 +21,7 @@
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 8rem var(--gap);
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -93,7 +93,7 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-text-content, .intro-img{
@@ -105,14 +105,14 @@
 .intro-img img {
     margin-left: 50%;
     max-width: 50%;
-    height: auto;
+    min-height: auto;
 }
 
 .top3-content {
     text-align: center;
     max-width: 70rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column  nowrap;
     justify-content: center;
     height: 100vh;
 }
@@ -121,7 +121,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .grid-main-heading {
