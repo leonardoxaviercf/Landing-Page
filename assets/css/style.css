@@ -163,6 +163,7 @@
     max-width: 36rem;
     max-height: 36rem;
     overflow: hidden;
+    padding-bottom: 10rem;
 }
 
 .gallery-img img {
@@ -171,4 +172,9 @@
 
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.resposive-table {
+    overflow: hidden;
+    overflow-x: auto;
 }
