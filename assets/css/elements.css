@@ -17,9 +17,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    word-break: break-word; 
-    hyphens: auto; 
+    font-family: 'Montserrat', sans-serif; 
 }
 
 h1 {
