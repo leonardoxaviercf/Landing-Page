@@ -7,15 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1><a href="#home">LOGO</a></h1>
+            <h1 onclick="getElementById('close-menu').checked=false;"><a href="#home">LOGO</a></h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked=false;">
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#top3">Top 3</a></li>
                     <li><a href="#gallery">Gallery</a></li>
@@ -202,6 +204,7 @@
             <a href="https://github.com/leonardoxaviercf/" rel="nofollow" target="_blank">Landing page criada por Leonardo Xavier</a>
         </p>
     </footer>
+    <a class="back-to-top" href="#home">➤</a>
 </body>
 </body>
 </html>

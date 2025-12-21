@@ -101,7 +101,7 @@
     justify-content: center;
 }
 
-.intro-img img, .intro-imd svg {
+.intro-img img, .intro-img svg {
     margin-left: 50%;
     max-width: 50%;
     min-height: auto;
@@ -226,7 +226,7 @@
     box-shadow: 0 0 1rem 0.2rem var(--secundary-color);
 }
 
- div .full-width {
+ div.full-width {
     width: 100%;
     flex: 1 1 100%;
 }
@@ -247,7 +247,7 @@
 }
 
 .form-group ::placeholder {
-    color: eee;
+    color: #eee;
 
 }
 
@@ -265,8 +265,34 @@
     padding: 3rem;
 }
 
+.close-menu {
+    display: none;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--primary-color);
+}
+
 @media (max-width: 800px) {
-    .intro-content, .grid{
+   h2 {
+        font-size: 4rem;
+        line-height: 1.1;
+        word-break: break-word;
+    }
+
+    .intro-content, .grid {
         grid-template-columns: 1fr;
     }
 
@@ -282,5 +308,53 @@
 
     .grid-one-content {
         display: block;
+    }
+
+    .menu {
+        bottom: 0;
+        text-align: center;
+    }
+
+    .menu-content, .menu-content ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        display: block;
+        content: '×';
+    }
+
+    .menu-spacing {
+        display: none;
     }
 }
